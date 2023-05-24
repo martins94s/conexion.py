@@ -2,7 +2,7 @@
 
 Algunos de los aspectos principales a considerar en vehículos autónomos en cumplimiento con esta ley son:
 
-*La recolección, almacenamiento, modificación y procesamiento de datos personales debe realizarse de manera lícita y justa.
+*La recolección, almacenamiento, modificación y procesamiento de datos personales debe realizarse de manera lícita y <justa.
 *Los datos personales deben ser precisos y estar actualizados.
 *El uso de los datos personales debe limitarse al propósito para el cual fueron recolectados.
 *Los datos personales sensibles (como el origen racial o étnico, las opiniones políticas, las creencias religiosas o filosóficas, la afiliación sindical, la información sobre la salud o la vida sexual) requieren una protección especial.
