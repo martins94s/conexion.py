@@ -1,0 +1,40 @@
+1)La Ley 25.326 (Ley de Protección de Datos Personales) tiene como objetivo proteger los datos personales registrados en archivos, registros, bases de datos u otros medios técnicos de tratamiento de datos, ya sean públicos o privados, destinados a proporcionar informes. El propósito de esta ley es garantizar el derecho al honor y la privacidad de las personas, así como el acceso a la información registrada sobre ellas, de acuerdo con lo establecido en el artículo 43, tercer párrafo, de la Constitución Nacional .
+
+Algunos de los aspectos principales a considerar en vehículos autónomos en cumplimiento con esta ley son:
+
+*La recolección, almacenamiento, modificación y procesamiento de datos personales debe realizarse de manera lícita y justa.
+*Los datos personales deben ser precisos y estar actualizados.
+*El uso de los datos personales debe limitarse al propósito para el cual fueron recolectados.
+*Los datos personales sensibles (como el origen racial o étnico, las opiniones políticas, las creencias religiosas o filosóficas, la afiliación sindical, la información sobre la salud o la vida sexual) requieren una protección especial.
+*El titular de los datos tiene derecho a acceder a sus datos personales y solicitar su rectificación, actualización o eliminación.
+*La persona responsable del archivo, registro, base de datos o banco de datos debe tomar medidas de seguridad adecuadas para proteger los datos personales contra el acceso o manipulación no autorizados.
+
+-En el caso específico de vehículos autónomos, es importante tener en cuenta que estos vehículos pueden recopilar y almacenar una gran cantidad de información sobre sus usuarios y su entorno. Por lo tanto, es importante asegurarse de que esta información se maneje de manera responsable y en cumplimiento con la Ley 25.326 (Ley de Protección de Datos Personales).
+
+2)
+https://lucid.app/lucidchart/939a6225-7e3f-4fb3-b069-49bcad0cae1b/edit?viewport_loc=-11%2C124%2C1480%2C692%2C0_0&invitationId=inv_78aa1ffb-0066-467c-b867-b735e640c9f6
+3)
+create database vehiculosAutonomos;
+use vehiculosAutonomos;
+create table vehiculo (vehiculoID INT,marca varchar(30),modelo varchar(30),año int,nivelAutonomo int);
+create table sensor (sensorID INT,tipo varchar(30),ubicacion varchar(40));
+create table viaje (viajeID INT,horaINICIO INT,horaFIN INT,ubicacionINICIO varchar(50),ubicacionFIN varchar(50));
+4)
+import mysql.connector
+class Conectar():
+
+    def __init__(self) -> None:
+        try:
+            conexion = mysql.connector.connect(
+                host = 'localhost',
+                port = 3306,
+                user = 'root',
+                password = '6973',
+                db='vehiculosAutonomos'
+            )
+            if conexion.is_connected():
+                print("LA CONEXION FUE EXITOSA")
+
+        except:
+            print("NO SE PUDO CONETAR A LA BASE DE DATOS")
+
