@@ -8,7 +8,7 @@ class Conectar():
                 host = 'localhost',
                 port = 3306,
                 user = 'root',
-                password = 'Quebracho00',
+                password = '6973',
                 db='bd_ejemplo_innova'
             )
             if conexion.is_connected():
