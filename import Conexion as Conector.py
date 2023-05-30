@@ -8,3 +8,4 @@ if(variableAuxiliar == 1):
 else: 
     print("Gracias por cerrar la Base de Datos.")
     
+    
